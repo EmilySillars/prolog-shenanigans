@@ -1,43 +1,10 @@
-/*
-Installing SWI-Prolog:
-$ sudo apt install swi-prolog-core
-
-To read/compile the file, run swi-prolog
-
-$ swipl
-
--? ['filename.pl'].
-
-Then I can consult the database of the file with queries...
-For example,
-
-$ swipl
-
--? ['hmex2.pl'].
-
--? likesImprov(X).
-
-Getting stuck? Try using the debugger!
-
--? trace.
-
-To turn off the debugger, do
-
--? notrace.
-
-Want use of the up arrow to see your history of commands while using swipl?
-Install rlwrap from: https://github.com/hanslub42/rlwrap
-Then run the following:
-$ rlwrap swipl
-*/
+% Example 1.2 from
+% https://course.ccs.neu.edu/cs4410sp19/lec_type-inference_notes.html
 
 use_module(library(apply)). %to import include
 
 % messing around
 likesImprov(jane).
-
-% Example 1.2 from
-% https://course.ccs.neu.edu/cs4410sp19/lec_type-inference_notes.html
 
 /* Let's typecheck this program: first we will typecheck f, then g, and finally g(7).
 
